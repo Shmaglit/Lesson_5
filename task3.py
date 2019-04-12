@@ -9,10 +9,12 @@
 # Примечание: Список с целыми числами создайте вручную в начале файла. Не забудьте включить туда отрицательные числа.
 # 10-20 чисел в списке вполне достаточно.
 
+import math
+
 
 def new_list(list_var):
     list1 = list_var[:]
-    return [number**2 for number in list1]
+    return [math.sqrt(number) if number > 0 else number for number in list1]
 
 
 old_list = [3, 7, -2, 0, 56, 2, -30, 4, 12, -1, -34, -8, 13, 9, -9]
